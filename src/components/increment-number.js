@@ -6,24 +6,32 @@ export default class IncrementNumber extends Component {
 
     this.state = {
       counter: 0,
-      incrementBy: 1,
+      incrementUp: 1,
+      incrementDown: -1,
     };
+
+    this.handleCountUp = this.handleCountUp.bind(this);
+    this.handleCountDown = this.handleCountDown.bind(this);
   }
 
   handleCountUp() {
-    // TODO
+    this.setState({
+      counter: this.state.counter + this.state.incrementUp,
+    });
   }
 
   handleCountDown() {
-    // TODO
+    this.setState({
+      counter: this.state.counter + this.state.incrementDown,
+    });
   }
 
   render() {
     return (
       <div>
-        <button>Up</button>
-        <h1>0</h1>
-        <button>Down</button>
+        <button onClick={this.handleCountUp}>Up</button>
+        <h1>{this.state.counter}</h1>
+        <button onClick={this.handleCountDown}>Down</button>
       </div>
     );
   }
