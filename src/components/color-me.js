@@ -6,6 +6,13 @@ export default class ColorMe extends Component {
   }
 
   render() {
-    return <div>Color Me</div>;
+    return (
+      <div>
+        <h1>Color Me</h1>
+        <input placeholder="Color..."></input>
+        <input placeholder="Message..."></input>
+        <button>Submit</button>
+      </div>
+    );
   }
 }

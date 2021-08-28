@@ -6,6 +6,13 @@ export default class IncrementText extends Component {
   }
 
   render() {
-    return <div>Increment Text</div>;
+    return (
+      <div>
+        <h1>12px</h1>
+        <input placeholder="Increment by..."></input>
+        <button>Decrease</button>
+        <button>Increase</button>
+      </div>
+    );
   }
 }

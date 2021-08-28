@@ -6,6 +6,11 @@ export default class ToggleClock extends Component {
   }
 
   render() {
-    return <div>Toggle Clock</div>;
+    return (
+      <div>
+        <h1>Clock</h1>
+        <button>Toggle Clock</button>
+      </div>
+    );
   }
 }
