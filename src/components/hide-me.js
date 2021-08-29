@@ -6,7 +6,7 @@ export default class HideMe extends Component {
 
     this.state = {
       heading: "Hide Me",
-      isShown: true,
+      isShowing: true,
       buttonText: "Hide Me",
     };
 
@@ -14,12 +14,12 @@ export default class HideMe extends Component {
   }
 
   toggleShown() {
-    if (this.state.isShown) {
-      this.setState({ heading: "", isShown: false, buttonText: "Show Me" });
+    if (this.state.isShowing) {
+      this.setState({ heading: "", isShowing: false, buttonText: "Show Me" });
     } else {
       this.setState({
         heading: "Hide Me",
-        isShown: true,
+        isShowing: true,
         buttonText: "Hide Me",
       });
     }
@@ -28,7 +28,7 @@ export default class HideMe extends Component {
   render() {
     return (
       <div>
-        <h1 isShown={this.state.isShown}>{this.state.heading}</h1>
+        <h1 isShowing={this.state.isShowing}>{this.state.heading}</h1>
         <button onClick={this.toggleShown}>{this.state.buttonText}</button>
       </div>
     );
