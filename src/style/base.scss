@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .component {
+    height: 150px;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+  }
+}

@@ -12,12 +12,24 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <AlignMe />
-        <HideMe />
-        <IncrementNumber />
-        <IncrementText />
-        <ColorMe />
-        <ToggleClock />
+        <div className="component">
+          <AlignMe />
+        </div>
+        <div className="component">
+          <HideMe />
+        </div>
+        <div className="component">
+          <IncrementNumber />
+        </div>
+        <div className="component">
+          <IncrementText />
+        </div>
+        <div className="component">
+          <ColorMe />
+        </div>
+        <div className="component">
+          <ToggleClock />
+        </div>
       </div>
     );
   }
