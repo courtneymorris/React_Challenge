@@ -1,34 +1,67 @@
 import React, { Component } from "react";
 
-import AlignMe from "./align-me";
-import HideMe from "./hide-me";
-import IncrementNumber from "./increment-number";
-import IncrementText from "./increment-text";
-import ColorMe from "./color-me";
-import ToggleClock from "./toggle-clock";
-import { breakStatement } from "babel-types";
+import AlignMe from "./traditional-components/align-me";
+import HideMe from "./traditional-components/hide-me";
+import IncrementNumber from "./traditional-components/increment-number";
+import IncrementText from "./traditional-components/increment-text";
+import ColorMe from "./traditional-components/color-me";
+import ToggleClock from "./traditional-components/toggle-clock";
+
+import Resizer from "./alex-increment-text";
+import Color from "./alex-color-me";
 
 export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className="component">
+        <h1>My Solutions:</h1>
+
+        <div>
           <AlignMe />
         </div>
-        <div className="component">
+
+        <hr />
+
+        <div>
           <HideMe />
         </div>
-        <div className="component">
+
+        <hr />
+
+        <div>
           <IncrementNumber />
         </div>
-        <div className="component">
+
+        <hr />
+
+        <div>
           <IncrementText />
         </div>
-        <div className="component">
+
+        <hr />
+
+        <div>
           <ColorMe />
         </div>
-        <div className="component">
+
+        <hr />
+        <h1>Alex's Solutions:</h1>
+        <hr />
+
+        <div>
           <ToggleClock />
+        </div>
+
+        <hr />
+
+        <div>
+          <Resizer />
+        </div>
+
+        <hr />
+
+        <div>
+          <Color />
         </div>
       </div>
     );

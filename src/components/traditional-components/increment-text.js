@@ -21,7 +21,7 @@ export default class IncrementText extends Component {
   }
 
   handleTextSizeIncrease() {
-    for (let i = this.state.heading; i < 36; i++) {
+    for (let i = this.state.heading; i < 56; i++) {
       this.setState({
         heading: this.state.heading + parseInt(this.state.increment),
       });
@@ -41,6 +41,7 @@ export default class IncrementText extends Component {
       <div>
         <h1 style={{ fontSize: this.state.heading }}>{this.state.heading}px</h1>
         <input
+          type="number"
           onChange={this.handleChange}
           placeholder="Increment by..."
         ></input>
