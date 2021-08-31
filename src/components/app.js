@@ -14,6 +14,7 @@ import Alignment from "./hooks/hook-align-me";
 import Toggle from "./hooks/hook-hide-me";
 import ColorHook from "./hooks/hook-color-me";
 import Counter from "./hooks/hook-increment-number";
+import HookResizer from "./hooks/hook-increment-text";
 
 export default class App extends Component {
   constructor() {
@@ -103,6 +104,12 @@ export default class App extends Component {
 
         <div>
           <Counter />
+        </div>
+
+        <hr />
+
+        <div>
+          <HookResizer />
         </div>
       </div>
     );
