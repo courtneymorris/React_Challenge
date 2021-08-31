@@ -7,14 +7,29 @@ import IncrementText from "./traditional-components/increment-text";
 import ColorMe from "./traditional-components/color-me";
 import ToggleClock from "./traditional-components/toggle-clock";
 
-import Resizer from "./alex-increment-text";
-import Color from "./alex-color-me";
+import Resizer from "./traditional-components/alex-increment-text";
+import Color from "./traditional-components/alex-color-me";
+
+import Alignment from "./hooks/hook-align-me";
+import Toggle from "./hooks/hook-hide-me";
+import ColorHook from "./hooks/hook-color-me";
+import Counter from "./hooks/hook-increment-number";
 
 export default class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      colorExists: true,
+    };
+  }
   render() {
     return (
       <div className="app">
-        <h1>My Solutions:</h1>
+        <h1>Using Traditional Components</h1>
+        <hr />
+        <h2>My Solutions</h2>
+        <hr />
 
         <div>
           <AlignMe />
@@ -45,13 +60,13 @@ export default class App extends Component {
         </div>
 
         <hr />
-        <h1>Alex's Solutions:</h1>
-        <hr />
 
         <div>
           <ToggleClock />
         </div>
 
+        <hr />
+        <h2>Alex's Solutions</h2>
         <hr />
 
         <div>
@@ -62,6 +77,32 @@ export default class App extends Component {
 
         <div>
           <Color />
+        </div>
+
+        <hr />
+        <h1>Using Hooks</h1>
+        <hr />
+
+        <div>
+          <Alignment />
+        </div>
+
+        <hr />
+
+        <div>
+          <Toggle />
+        </div>
+
+        <hr />
+
+        <div>
+          <ColorHook />
+        </div>
+
+        <hr />
+
+        <div>
+          <Counter />
         </div>
       </div>
     );
