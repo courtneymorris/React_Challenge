@@ -36,25 +36,26 @@ export default class ColorMe extends Component {
 
   render() {
     return (
-      <div>
-        <h1 style={{ color: this.state.textColor }}>{this.state.heading}</h1>
-        <form onSubmit={this.handleSubmit}>
+      <div className="color-me">
+        <h1 className="color-me-header" style={{ color: this.state.textColor }}>
+          {this.state.heading}
+        </h1>
+        <form className="color-me-form" onSubmit={this.handleSubmit}>
+          <input
+            className="color-me-color-input"
+            type="color"
+            name="textColor"
+            placeholder="Color..."
+            onChange={this.handleChangeColor}
+          ></input>
+          <input
+            type="text"
+            name="heading"
+            placeholder="Message..."
+            onChange={this.handleChangeHeading}
+          ></input>
           <div>
-            <input
-              type="color"
-              name="textColor"
-              placeholder="Color..."
-              onChange={this.handleChangeColor}
-            ></input>
-            <input
-              type="text"
-              name="heading"
-              placeholder="Message..."
-              onChange={this.handleChangeHeading}
-            ></input>
-            <div>
-              <button type="submit">Submit</button>
-            </div>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>

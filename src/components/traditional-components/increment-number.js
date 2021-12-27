@@ -28,7 +28,7 @@ export default class IncrementNumber extends Component {
 
   render() {
     return (
-      <div>
+      <div className="increment-num">
         <button onClick={this.handleCountUp}>Up</button>
         <h1>{this.state.counter}</h1>
         <button onClick={this.handleCountDown}>Down</button>

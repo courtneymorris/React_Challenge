@@ -7,8 +7,8 @@ import IncrementText from "./traditional-components/increment-text";
 import ColorMe from "./traditional-components/color-me";
 import ToggleClock from "./traditional-components/toggle-clock";
 
-import Resizer from "./traditional-components/alex-increment-text";
-import Color from "./traditional-components/alex-color-me";
+import Resizer from "./traditional-components/another-increment-text";
+import Color from "./traditional-components/another-color-me";
 
 import Alignment from "./hooks/hook-align-me";
 import Toggle from "./hooks/hook-hide-me";
@@ -27,49 +27,45 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <h1>Using Traditional Components</h1>
-        <hr />
-        <h2>My Solutions</h2>
-        <hr />
+        {/* <h1>Using Traditional Components</h1>
+        <hr />   */}
 
-        <div>
+        <div className="section">
           <AlignMe />
         </div>
 
         <hr />
 
-        <div>
+        <div className="section">
           <HideMe />
         </div>
 
         <hr />
 
-        <div>
+        <div className="section">
           <IncrementNumber />
         </div>
 
         <hr />
 
-        <div>
+        <div className="section">
           <IncrementText />
         </div>
 
         <hr />
 
-        <div>
+        <div className="section">
           <ColorMe />
         </div>
 
         <hr />
 
-        <div>
+        <div className="section">
           <ToggleClock />
         </div>
 
         <hr />
-        <h2>Alex's Solutions</h2>
-        <hr />
-
+        {/* 
         <div>
           <Resizer />
         </div>
@@ -110,7 +106,7 @@ export default class App extends Component {
 
         <div>
           <HookResizer />
-        </div>
+        </div> */}
       </div>
     );
   }

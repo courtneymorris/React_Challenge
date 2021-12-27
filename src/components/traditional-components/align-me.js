@@ -5,7 +5,7 @@ export default class AlignMe extends Component {
     super();
 
     this.state = {
-      alignText: "left",
+      alignText: "center",
     };
 
     this.handleAlignLeft = this.handleAlignLeft.bind(this);

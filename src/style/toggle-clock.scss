@@ -1,0 +1,12 @@
+.toggle-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 120px;
+  .toggle-clock-header {
+    min-height: 82px;
+    position: static;
+  }
+}

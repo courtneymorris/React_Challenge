@@ -1,0 +1,16 @@
+.increment-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .increment-text-header {
+    min-height: 84px;
+    position: static;
+  }
+  .increment-text-form {
+    input {
+      width: 100px;
+    }
+  }
+}

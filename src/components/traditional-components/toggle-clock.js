@@ -41,9 +41,13 @@ export default class ToggleClock extends Component {
 
   render() {
     return (
-      <div>
-        <h1 style={{ display: this.state.display }}>{this.state.time}</h1>
-        <button onClick={this.toggleClock}>Toggle Clock</button>
+      <div className="toggle-clock">
+        <div className="toggle-clock-header">
+          <h1 style={{ display: this.state.display }}>{this.state.time}</h1>
+        </div>
+        <div className="toggle-clock-button">
+          <button onClick={this.toggleClock}>Toggle Clock</button>
+        </div>
       </div>
     );
   }
